@@ -20,6 +20,31 @@ position = Vector2(597, 296)
 
 [node name="GoldUi" parent="." unique_id=1434762861 instance=ExtResource("4_2b426")]
 
+[node name="PauseMask" type="ColorRect" parent="." unique_id=1757021054]
+visible = false
+offset_right = 1296.0
+offset_bottom = 727.0
+color = Color(0, 0, 0, 0.7137255)
+
+[node name="PauseMenu" type="VBoxContainer" parent="." unique_id=1068251228]
+visible = false
+offset_left = 539.0
+offset_top = 255.0
+offset_right = 680.0
+offset_bottom = 375.0
+
+[node name="ContinueButton" type="Button" parent="PauseMenu" unique_id=1181924116]
+layout_mode = 2
+text = "继续游戏"
+
+[node name="GamesettingsButton" type="Button" parent="PauseMenu" unique_id=1572165554]
+layout_mode = 2
+text = "设置"
+
+[node name="BackToMainButton" type="Button" parent="PauseMenu" unique_id=506166192]
+layout_mode = 2
+text = "回到主菜单"
+
 [node name="ShopButton" type="Button" parent="." unique_id=322204005]
 offset_left = 777.0
 offset_top = -2.0
@@ -27,4 +52,13 @@ offset_right = 885.0
 offset_bottom = 55.0
 text = "商店"
 
+[node name="SettingsButton" type="Button" parent="." unique_id=1861643716]
+offset_left = 11.0
+offset_right = 41.0
+offset_bottom = 31.0
+text = "⚙️"
+
+[connection signal="pressed" from="PauseMenu/ContinueButton" to="." method="close_pause_menu"]
+[connection signal="pressed" from="PauseMenu/BackToMainButton" to="." method="back_to_main_menu"]
 [connection signal="pressed" from="ShopButton" to="." method="_on_shop_button_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="open_pause_menu"]

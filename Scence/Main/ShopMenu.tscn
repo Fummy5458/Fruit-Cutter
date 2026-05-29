@@ -15,4 +15,34 @@ theme_override_colors/font_color = Color(0.8620572, 0, 0.22107863, 1)
 theme_override_font_sizes/font_size = 103
 text = "x"
 
+[node name="BuyButton" type="Button" parent="." unique_id=2089693520]
+layout_mode = 0
+offset_left = 568.0
+offset_top = 416.0
+offset_right = 751.0
+offset_bottom = 493.0
+text = "购买"
+
+[node name="PriceLabel" type="Label" parent="." unique_id=446768661]
+layout_mode = 0
+offset_left = 572.0
+offset_top = 375.0
+offset_right = 734.0
+offset_bottom = 398.0
+
+[node name="MultiplierLabel" type="Label" parent="." unique_id=2103904960]
+layout_mode = 0
+offset_left = 540.0
+offset_top = 320.0
+offset_right = 768.0
+offset_bottom = 343.0
+
+[node name="RemainingLabel" type="Label" parent="." unique_id=560868549]
+layout_mode = 0
+offset_left = 546.0
+offset_top = 218.0
+offset_right = 772.0
+offset_bottom = 300.0
+
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="BuyButton" to="." method="_on_buy_button_pressed"]

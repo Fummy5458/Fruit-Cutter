@@ -7,48 +7,39 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_x7584")
 
-[node name="StartButton" type="Button" parent="." unique_id=937686856]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=800723738]
+layout_mode = 1
+offset_right = 60.0
+offset_bottom = 92.0
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="StartButton" type="Button" parent="VBoxContainer" unique_id=937686856]
 custom_minimum_size = Vector2(60, 10)
-layout_mode = 0
-offset_left = 110.0
-offset_top = 25.0
-offset_right = 170.0
-offset_bottom = 45.0
+layout_mode = 2
 theme_override_font_sizes/font_size = 8
 text = "开始游戏"
 
-[node name="ContinueButton" type="Button" parent="." unique_id=1390365455]
+[node name="ContinueButton" type="Button" parent="VBoxContainer" unique_id=1390365455]
 custom_minimum_size = Vector2(60, 10)
-layout_mode = 0
-offset_left = 110.0
-offset_top = 48.0
-offset_right = 170.0
-offset_bottom = 68.0
+layout_mode = 2
 theme_override_font_sizes/font_size = 8
 text = "继续游戏"
 
-[node name="SettingsButton" type="Button" parent="." unique_id=786846229]
+[node name="SettingsButton" type="Button" parent="VBoxContainer" unique_id=786846229]
 custom_minimum_size = Vector2(60, 10)
-layout_mode = 0
-offset_left = 110.0
-offset_top = 71.0
-offset_right = 170.0
-offset_bottom = 91.0
+layout_mode = 2
 theme_override_font_sizes/font_size = 8
 text = "设置"
 
-[node name="ExitButton" type="Button" parent="." unique_id=2013557356]
+[node name="ExitButton" type="Button" parent="VBoxContainer" unique_id=2013557356]
 custom_minimum_size = Vector2(60, 10)
-layout_mode = 0
-offset_left = 111.0
-offset_top = 94.0
-offset_right = 171.0
-offset_bottom = 114.0
+layout_mode = 2
 theme_override_font_sizes/font_size = 8
 text = "退出游戏
 "
 
-[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="ContinueButton" to="." method="_on_continue_button_pressed"]
-[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
