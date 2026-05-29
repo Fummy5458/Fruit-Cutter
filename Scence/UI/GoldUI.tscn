@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bjs87c4rtc4r3"]
+
+[ext_resource type="Script" uid="uid://db0hm5wa5n0lc" path="res://Scripts/gold_ui.gd" id="1_u5m8n"]
+
+[node name="GoldUi" type="CanvasLayer" unique_id=1434762861 groups=["GoldUI"]]
+script = ExtResource("1_u5m8n")
+
+[node name="TotalMoneyLabel" type="Label" parent="." unique_id=2003665777]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -194.0
+offset_top = 9.0
+offset_right = -14.0
+offset_bottom = 39.0
+grow_horizontal = 0
+pivot_offset = Vector2(180, 0)
+horizontal_alignment = 2
+
+[node name="SessionMoneyLabel" type="Label" parent="." unique_id=1678930433]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -194.0
+offset_top = 49.0
+offset_right = -14.0
+offset_bottom = 79.0
+grow_horizontal = 0
+pivot_offset = Vector2(180, 0)
+horizontal_alignment = 2
+
+[node name="MultiplierLabel" type="Label" parent="." unique_id=72547378]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -194.0
+offset_top = 89.0
+offset_right = -14.0
+offset_bottom = 119.0
+grow_horizontal = 0
+pivot_offset = Vector2(180, 0)
+horizontal_alignment = 2

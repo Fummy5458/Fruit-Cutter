@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dhmihw1pjdm6m"]
+
+[ext_resource type="Texture2D" uid="uid://ci713npau6shm" path="res://SuCai/CatPackFree/Box3.png" id="1_7da5s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_suhnk"]
+atlas = ExtResource("1_7da5s")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ua02s"]
+atlas = ExtResource("1_7da5s")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3ks4"]
+atlas = ExtResource("1_7da5s")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ks8d"]
+atlas = ExtResource("1_7da5s")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0cay3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_suhnk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ua02s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3ks4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ks8d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Boxcat" type="Node2D" unique_id=292555965]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1108005212]
+sprite_frames = SubResource("SpriteFrames_0cay3")
+frame_progress = 0.23855013

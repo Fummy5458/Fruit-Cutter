@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bmwpce0c4qk8w"]
+
+[ext_resource type="Script" uid="uid://b247cc0anj147" path="res://Scripts/floating_text.gd" id="1_g2o1b"]
+
+[node name="FloatingText" type="Node2D" unique_id=695349663]
+script = ExtResource("1_g2o1b")
+
+[node name="TextLabel" type="Label" parent="." unique_id=1865858064]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(1, 0.9019608, 0.4, 1)
+theme_override_font_sizes/font_size = 28
+horizontal_alignment = 1

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bctiw1vftp5hl"]
+
+[ext_resource type="Script" uid="uid://csc23oj2j7rca" path="res://Scripts/gold_manager.gd" id="1_ls81e"]
+
+[node name="GoldManager" type="Node2D" unique_id=1517627423]
+script = ExtResource("1_ls81e")

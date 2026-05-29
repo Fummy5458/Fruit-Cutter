@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bdoq8cv40hywj"]
+
+[ext_resource type="Texture2D" uid="uid://bkxub1pbx2a4e" path="res://SuCai/完整西瓜.png" id="1_6h2xy"]
+[ext_resource type="Script" uid="uid://bb8fca7degppf" path="res://Scripts/watermelon.gd" id="1_xww63"]
+[ext_resource type="PackedScene" uid="uid://bmwpce0c4qk8w" path="res://Scence/UsefulTools/FloatingText.tscn" id="2_35ytc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6h2xy"]
+radius = 762.07904
+
+[node name="Watermelon" type="Area2D" unique_id=215945805]
+script = ExtResource("1_xww63")
+floating_text_scn = ExtResource("2_35ytc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1728786632]
+z_index = 1
+scale = Vector2(0.13647461, 0.1418457)
+texture = ExtResource("1_6h2xy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1421613866]
+z_index = 2
+position = Vector2(-2, 16)
+scale = Vector2(0.13647461, 0.1418457)
+shape = SubResource("CircleShape2D_6h2xy")

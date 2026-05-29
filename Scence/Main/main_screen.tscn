@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cnryb324sxywi"]
+
+[ext_resource type="Script" uid="uid://buktcaiw3oo6j" path="res://Scripts/main_screen.gd" id="1_hm658"]
+[ext_resource type="Texture2D" uid="uid://qyw2c0rvtrmk" path="res://SuCai/背景.png" id="1_t3bsp"]
+[ext_resource type="PackedScene" uid="uid://bdoq8cv40hywj" path="res://Scence/Character/Fluit/watermelon.tscn" id="2_g6fjd"]
+[ext_resource type="PackedScene" uid="uid://bctiw1vftp5hl" path="res://Scence/UsefulTools/GoldManager.tscn" id="3_u50ap"]
+[ext_resource type="PackedScene" uid="uid://bjs87c4rtc4r3" path="res://Scence/UI/GoldUI.tscn" id="4_2b426"]
+
+[node name="Node2D" type="Node2D" unique_id=1417863155]
+script = ExtResource("1_hm658")
+
+[node name="BackGround" type="Sprite2D" parent="." unique_id=784682683]
+z_index = -1
+texture = ExtResource("1_t3bsp")
+
+[node name="Watermelon" parent="BackGround" unique_id=2084790607 instance=ExtResource("2_g6fjd")]
+position = Vector2(597, 296)
+
+[node name="GoldManager" parent="." unique_id=1517627423 instance=ExtResource("3_u50ap")]
+
+[node name="GoldUi" parent="." unique_id=1434762861 instance=ExtResource("4_2b426")]
+
+[node name="ShopButton" type="Button" parent="." unique_id=322204005]
+offset_left = 777.0
+offset_top = -2.0
+offset_right = 885.0
+offset_bottom = 55.0
+text = "商店"
+
+[connection signal="pressed" from="ShopButton" to="." method="_on_shop_button_pressed"]
